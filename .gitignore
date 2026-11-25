@@ -1,0 +1,12 @@
+.official/
+.judge-deps/
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.env*
+*.pdf
+*.odp
+*.ipynb
+*.zip
+/results/
