@@ -1,4 +1,5 @@
 .official/
+/ai_agent_tournament/
 .judge-deps/
 __pycache__/
 *.py[cod]
@@ -10,3 +11,4 @@ __pycache__/
 *.ipynb
 *.zip
 /results/
+/experiments/results/*.json.tmp

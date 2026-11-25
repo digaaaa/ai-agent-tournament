@@ -51,7 +51,9 @@ def main():
 
     def save():
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        pending = output.with_suffix(output.suffix + ".tmp")
+        pending.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+        pending.replace(output)
 
     with tempfile.TemporaryDirectory() as scratch:
         if game == "road_trip":

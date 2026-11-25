@@ -9,7 +9,7 @@ import chess
 PIECE_VALUES = (0, 100, 320, 330, 500, 900)
 CENTER = chess.BB_D4 | chess.BB_E4 | chess.BB_D5 | chess.BB_E5
 HOME_RANK = {chess.WHITE: chess.BB_RANK_1, chess.BLACK: chess.BB_RANK_8}
-CLOCK_RESERVE = 0.75
+CLOCK_RESERVE = 1.8
 MATE = 100_000
 
 
@@ -19,10 +19,11 @@ class SearchTimeout(Exception):
 
 def terminal_score(board):
     """Return a White-perspective score for an ending, or None if play continues."""
-    if board.is_checkmate():
-        return -MATE if board.turn == chess.WHITE else MATE
-    if (board.is_stalemate() or board.is_insufficient_material()
-            or board.halfmove_clock >= 100 or board.is_repetition(3)):
+    if not any(board.generate_legal_moves()):
+        if board.is_check():
+            return -MATE if board.turn == chess.WHITE else MATE
+        return 0
+    if board.is_insufficient_material() or board.halfmove_clock >= 100 or board.is_repetition(3):
         return 0
     return None
 
@@ -121,7 +122,8 @@ def act(observation):
     remaining = observation["time_remaining_s"]
     if len(legal) == 1 or remaining <= CLOCK_RESERVE:
         return {"move": fallback}
-    deadline = started + min(0.026, (remaining - CLOCK_RESERVE) / 35)
+    turn_cap = 0.021 if observation["ply"] < 40 else 0.011
+    deadline = started + min(turn_cap, (remaining - CLOCK_RESERVE) / 40)
 
     board = chess.Board()
     for move in observation["history"]:

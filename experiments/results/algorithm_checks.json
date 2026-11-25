@@ -1,0 +1,47 @@
+{
+  "road_edges_checked": 262,
+  "small_instances_checked": [
+    "iberia_4",
+    "france_6",
+    "central_8"
+  ],
+  "additional_positions_checked": 12,
+  "depth_comparison": [
+    {
+      "position": 1,
+      "depth": 2,
+      "value": 0,
+      "minimax_nodes": 421,
+      "alphabeta_nodes": 139,
+      "minimax_s": 0.028267800342291594,
+      "alphabeta_s": 0.01595399994403124
+    },
+    {
+      "position": 2,
+      "depth": 2,
+      "value": 130,
+      "minimax_nodes": 1048,
+      "alphabeta_nodes": 127,
+      "minimax_s": 0.07825240027159452,
+      "alphabeta_s": 0.016873700078576803
+    },
+    {
+      "position": 3,
+      "depth": 2,
+      "value": 638,
+      "minimax_nodes": 1588,
+      "alphabeta_nodes": 102,
+      "minimax_s": 0.1095926002599299,
+      "alphabeta_s": 0.023129400331526995
+    },
+    {
+      "position": 4,
+      "depth": 2,
+      "value": 0,
+      "minimax_nodes": 801,
+      "alphabeta_nodes": 118,
+      "minimax_s": 0.08202369976788759,
+      "alphabeta_s": 0.01655739964917302
+    }
+  ]
+}

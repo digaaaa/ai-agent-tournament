@@ -1,0 +1,1141 @@
+[
+  {
+    "opponent": "baseline",
+    "match_seed": 3111,
+    "winner": "A",
+    "reason": "checkmate / checkmate",
+    "incidents": [],
+    "duration_s": 8.66,
+    "games": [
+      {
+        "white": "B",
+        "winner": "A",
+        "reason": "checkmate",
+        "moves": [
+          "a2a3",
+          "e7e5",
+          "a1a2",
+          "d7d5",
+          "a2a1",
+          "g8e7",
+          "a1a2",
+          "c8d7",
+          "a2a1",
+          "b8c6",
+          "a1a2",
+          "c6d4",
+          "a2a1",
+          "e5e4",
+          "a1a2",
+          "h8g8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "h8g8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "d8c8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "g8h8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "e8d8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "h8g8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "d8e8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "g8h8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "c8d8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "h8g8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "d8b8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "g8h8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "e8d8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "h8g8",
+          "a2a1",
+          "g8h8",
+          "a1a2",
+          "d8c8",
+          "a2a1",
+          "h8g8",
+          "a1a2",
+          "d4e2",
+          "d1e2",
+          "g8h8",
+          "e2e4",
+          "d5e4",
+          "a2a1",
+          "e7d5",
+          "a1a2",
+          "f8a3",
+          "a2a3",
+          "h8g8",
+          "a3a7",
+          "a8a7",
+          "b1a3",
+          "a7a3",
+          "b2a3",
+          "g8h8",
+          "a3a4",
+          "d7a4",
+          "c1a3",
+          "a4c2",
+          "a3b2",
+          "h8g8",
+          "b2g7",
+          "g8g7",
+          "d2d3",
+          "e4d3",
+          "f1d3",
+          "c2d3",
+          "e1d1",
+          "g7g2",
+          "d1c1",
+          "g2f2",
+          "c1d1",
+          "d3e4",
+          "d1c1",
+          "e4h1",
+          "c1b1",
+          "f2h2",
+          "b1a1",
+          "h1e4",
+          "g1e2",
+          "b8a8",
+          "a1b2",
+          "h2e2",
+          "b2b3",
+          "a8a2"
+        ],
+        "final_fen": "2k5/1pp2p1p/8/3n4/4b3/1K6/q3r3/8 w - - 2 62",
+        "plies": 122,
+        "clock_left_s": {
+          "A": 2.78,
+          "B": 3.77
+        },
+        "incidents": []
+      },
+      {
+        "white": "A",
+        "winner": "A",
+        "reason": "checkmate",
+        "moves": [
+          "e2e4",
+          "a7a5",
+          "d2d4",
+          "a5a4",
+          "g1h3",
+          "a4a3",
+          "b2a3",
+          "a8a3",
+          "b1a3",
+          "b7b5",
+          "f1b5",
+          "b8a6",
+          "c1g5",
+          "a6b4",
+          "g5h4",
+          "b4a2",
+          "a1a2",
+          "c7c5",
+          "d4c5",
+          "c8a6",
+          "b5a6",
+          "d7d5",
+          "c5d6",
+          "d8d6",
+          "d1d6",
+          "e7d6",
+          "a6b5"
+        ],
+        "final_fen": "4kbnr/5ppp/3p4/1B6/4P2B/N6N/R1P2PPP/4K2R b Kk - 1 14",
+        "plies": 27,
+        "clock_left_s": {
+          "A": 4.44,
+          "B": 4.77
+        },
+        "incidents": []
+      }
+    ],
+    "search": {
+      "A": [
+        {
+          "depth": 3,
+          "completed_nodes": 740
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 269
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 333
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 220
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 128
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 109
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 455
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 180
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 152
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 180
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 152
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 178
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 148
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 169
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 148
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 167
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 146
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 173
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 146
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 171
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 148
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 169
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 148
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 167
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 178
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 176
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 171
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 169
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 177
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 175
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 142
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 35
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 113
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 110
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 29
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 36
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 136
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 34
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 38
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 34
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 122
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 33
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 32
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 108
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 121
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 102
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 116
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 123
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 142
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 125
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 108
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 103
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 114
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 43
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 44
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 861
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 112
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 365
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 154
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 138
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 119
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 460
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 174
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 141
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 147
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 157
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 178
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 919
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 35
+        }
+      ],
+      "B": [
+        {
+          "depth": 1,
+          "completed_nodes": 21
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 20
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 20
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 20
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 20
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 20
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 19
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 22
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 29
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 26
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 26
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 28
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 37
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 25
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 24
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 23
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 23
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 25
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 26
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 18
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 13
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 12
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 11
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 7
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 8
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 8
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 6
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 4
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 3
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 21
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 22
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 23
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 24
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 19
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 17
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 16
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 21
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 15
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 16
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 19
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 21
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 12
+        }
+      ]
+    }
+  },
+  {
+    "opponent": "demo_a",
+    "match_seed": 3126,
+    "winner": "A",
+    "reason": "checkmate / checkmate",
+    "incidents": [],
+    "duration_s": 6.55,
+    "games": [
+      {
+        "white": "B",
+        "winner": "A",
+        "reason": "checkmate",
+        "moves": [
+          "c2c3",
+          "e7e5",
+          "d2d4",
+          "e5e4",
+          "b2b4",
+          "d7d5",
+          "b1a3",
+          "g8e7",
+          "d1c2",
+          "c8d7",
+          "c2e4",
+          "d5e4",
+          "f2f3",
+          "b8c6",
+          "f3e4",
+          "h8g8",
+          "g2g3",
+          "g8h8",
+          "c1h6",
+          "g7h6",
+          "a1c1",
+          "f8g7",
+          "c1a1",
+          "h8g8",
+          "c3c4",
+          "c6d4",
+          "a1d1",
+          "d4e2",
+          "g1e2",
+          "g7e5",
+          "d1d7",
+          "d8d7",
+          "e2g1",
+          "g8h8",
+          "e1e2",
+          "h8g8",
+          "a3b5",
+          "d7g4",
+          "e2f2",
+          "g4e4",
+          "b5c7",
+          "e5c7",
+          "f1d3",
+          "e4h1",
+          "d3h7",
+          "h1h2",
+          "f2e1",
+          "h2g1",
+          "e1e2",
+          "g8g3",
+          "h7c2",
+          "c7e5",
+          "c2d1",
+          "g3e3",
+          "e2d2",
+          "a8d8",
+          "d2c1",
+          "g1d1"
+        ],
+        "final_fen": "3rk3/pp2np2/7p/4b3/1PP5/4r3/P7/2Kq4 w - - 0 30",
+        "plies": 58,
+        "clock_left_s": {
+          "A": 3.97,
+          "B": 4.43
+        },
+        "incidents": []
+      },
+      {
+        "white": "A",
+        "winner": "A",
+        "reason": "checkmate",
+        "moves": [
+          "e2e4",
+          "g8h6",
+          "d2d4",
+          "e7e6",
+          "c1h6",
+          "g7h6",
+          "g1h3",
+          "f8d6",
+          "f1b5",
+          "d6h2",
+          "h1h2",
+          "b8a6",
+          "e4e5",
+          "f7f5",
+          "b1c3",
+          "e8g8",
+          "b5a6",
+          "b7a6",
+          "h3f4",
+          "d8e7",
+          "h2h6",
+          "c7c5",
+          "d4c5",
+          "e7c5",
+          "c3a4",
+          "c5c2",
+          "d1c2",
+          "g8g7",
+          "h6h5",
+          "g7h8",
+          "f4g6",
+          "h8g8",
+          "g6f8",
+          "g8f8",
+          "h5h7",
+          "c8b7",
+          "h7d7",
+          "b7g2",
+          "c2c5",
+          "f8g8",
+          "d7e7",
+          "g2c6",
+          "c5c6",
+          "a8e8",
+          "c6e8"
+        ],
+        "final_fen": "4Q1k1/p3R3/p3p3/4Pp2/N7/8/PP3P2/R3K3 b Q - 0 23",
+        "plies": 45,
+        "clock_left_s": {
+          "A": 4.1,
+          "B": 4.37
+        },
+        "incidents": []
+      }
+    ],
+    "search": {
+      "A": [
+        {
+          "depth": 3,
+          "completed_nodes": 821
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 171
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 203
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 123
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 528
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 1327
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 188
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 187
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 1119
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 1157
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 199
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 123
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 151
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 140
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 629
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 272
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 341
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 210
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 173
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 495
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 179
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 133
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 144
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 173
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 251
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 199
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 188
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 62
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 861
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 120
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 154
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 307
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 244
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 138
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 476
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 188
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 655
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 568
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 170
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 177
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 196
+        },
+        {
+          "depth": 3,
+          "completed_nodes": 717
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 239
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 239
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 150
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 135
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 147
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 253
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 439
+        },
+        {
+          "depth": 2,
+          "completed_nodes": 127
+        },
+        {
+          "depth": 1,
+          "completed_nodes": 47
+        }
+      ],
+      "B": []
+    }
+  }
+]
