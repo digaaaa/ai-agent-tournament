@@ -1,6 +1,6 @@
 # AI Agent Tournament
 
-Two agents for IE University's AI: Reasoning & Problem Solving tournament. The Road Trip agent finds short simple cycles through required European cities. The Chess agent chooses legal moves under a cumulative clock.
+Four agents for IE University's AI: Reasoning & Problem Solving tournament. Road Trip finds a short cycle through the required cities. Chess chooses a legal move under a shared clock. Battleship tracks ships that can move until they are hit. Catan picks one legal action on the way to 7 points.
 
 ## Members and responsibilities
 
@@ -14,8 +14,8 @@ Two agents for IE University's AI: Reasoning & Problem Solving tournament. The R
 | --- | --- | --- |
 | Road Trip | BFS insertion, UCS, A*, first-improvement hill climbing, random restarts | `roadtrip_agent.py` |
 | Chess | Linear evaluation, depth-limited minimax, alpha-beta pruning, move ordering | `chess_agent.py` |
-| Battleship | Pending Rodrigo's contribution | |
-| Catan | Pending Rodrigo's contribution | |
+| Battleship | Constraint placements, sonar Bayes update, belief prediction, hunt around hits | `battleship_agent.py` |
+| Catan | Priority heuristic, estimated action values, Q-learning update | `catan_agent.py` |
 
 ## Setup and reproducibility
 
@@ -146,12 +146,50 @@ A fixed cutoff can miss tactics beyond the last explored ply. The evaluation has
 
 ### Battleship
 
-Rodrigo to add problem formulation, algorithms, experiments, resource limits, and technical explanation.
+#### Problem formulation
+
+The board is 10 by 10. Five ships can move one cell until their first hit, then they stay put. A state for the required filter is the top-left cell of one ship. An action in the match is a shot `[row, col]` or one sonar scan. The agent sees its own fleet, its shots, and its sonar readings. It does not see the enemy fleet. The goal is to destroy all 17 enemy segments before the 5-second clock runs out.
+
+#### Algorithms
+
+`consistent_placements` lists every horizontal or vertical ship that covers the required cells and avoids the blocked ones. `sonar_posterior` applies Bayes' rule with the published sensor: the reading is correct with the given probability, and one off otherwise, dropping readings outside `0..region_cells`. `predict_ship_belief` moves that top-left probability one cell, uniformly over the directions that stay on the board, or leaves it if the ship cannot move.
+
+`act` places the five ships on separate rows. After a `HIT`, it shoots an adjacent cell that has not been tried, because that ship can no longer move. With no hit yet, it uses one sonar scan on `[4, 4]`, then shoots unchecked cells in checkerboard order. It does not move its own ships.
+
+#### Baseline against improved version
+
+The baseline shoots a random cell it has not tried and lets the judge place the fleet. Eight paired games at seeds 3101–3108, official 5-second limit, no incidents: the improved agent destroyed the baseline fleet in all 8. Against the bundled demos at seed 3301 it lost to `demo_a` and beat `demo_b`, with no incidents. The official checks passed 3/3.
+
+#### Time and memory
+
+Each decision looks at the shot list once. If less than 0.05 seconds remain, it shoots the first unchecked cell and returns. No search tree is stored.
+
+#### Limits
+
+Old misses are ignored, which is correct while ships still move, but it also repeats less than a full probability map would. The belief filter is implemented and checked. The match agent does not run it over all five ships, because a rival does not move at random and the clock is shared. A later version could keep one belief per remaining ship length.
 
 ### Catan
 
-Rodrigo to add the heuristic baseline, learned or estimated value, experiments, resource limits, and technical explanation.
+#### Problem formulation
+
+Two players race to 7 victory points. The judge lists the legal actions. The agent sees its own hand and the public board, not the opponent's cards. An action is one id from that list. The objective is to reach 7 points before the rival, inside a 5-second clock.
+
+#### Algorithms
+
+`state_features` records the phase, both scores, the size of our hand, and how many settlements and cities we have. The same observation always gives the same list. `action_value` starts from a fixed estimate per action type (a city is worth more than a settlement, a settlement more than a road, a roll more than ending the turn) and adds the pip count of a settlement node. `q_update` is the one-step Q-learning rule. Those type values are estimates written in the file. They are not fit during a match. `heuristic_policy` is the baseline order: city, settlement, development cards, road, robber, trade, roll, end. The opening settlement is the legal node with the most pips. The robber steals from the opponent when that is legal. `act` plays that policy, and takes the first legal action if under 0.05 seconds remain.
+
+#### Baseline against improved version
+
+The baseline uses the same building order but picks at random among the legal actions of the chosen type. Twelve paired games at seeds 4101–4112, no incidents: the improved agent won 4 and the baseline won 8. Against the demos at seed 3301 it lost to `demo_a` and beat `demo_b`. The official checks passed 4/4. The estimated values did not beat a random choice inside the same action type on this sample. The gain of the improved agent is that the opening settlement and the action order are fixed and can be explained, not that the value table won the paired sample.
+
+#### Time and memory
+
+A decision scans the legal list once. Nothing is trained and nothing is written to disk during the game.
+
+#### Limits
+
+The value of an action depends mostly on its type. It does not plan a road toward a specific node, and it does not infer the opponent's full hand from the log. That is the next change if there is time.
 
 ## Use of generative AI
 
-OpenAI Codex helped interpret the supplied materials, implement and verify both agents, run and summarize experiments, and draft the README and study and presentation notes. The team should confirm the course-specific AI policy and review the implementation for the oral exam.
+OpenAI Codex helped interpret the supplied materials, implement and verify the Road Trip and Chess agents, run and summarize those experiments, and draft the README and study and presentation notes. A coding assistant in Cursor did the same for the Battleship and Catan files, their checks, and the notes for those two challenges. The team should confirm the course-specific AI policy and review every algorithm before the oral exam.

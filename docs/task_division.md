@@ -3,7 +3,7 @@
 | Owner | Scope |
 | --- | --- |
 | This contribution | European Road Trip and Chess agents, required functions, baselines, official checks, experiments, README, and oral and presentation notes |
-| Rodrigo | Battleship and Catan agents, required functions, baselines, experiments, and README and presentation sections |
+| Rodrigo | Battleship and Catan agents, required functions, baselines, experiments, and README and presentation sections. Official checks: Battleship 3/3, Catan 4/4. |
 
 The handbook specifies teams of four to six, while the project brief names two contributors. Confirm the approved roster with the instructor before submission and fill in the team name and member list.
 
